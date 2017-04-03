@@ -3,17 +3,17 @@
 There are 6 main File in this PHP example
 should be used in conjunction of the Android client.
 
-mobileConnect.php
+* mobileConnect.php
    The is the main class object that contains all the function required to perform mobile connect requests.
-config.php
+* config.php
    A simple file that contains the discovery credentials and endpoint that will be used by the main class file.
-check_network.php
+* check_network.php
    A simple way to perform IP based discovery lookup to check if a Mobile network is on a Mobile Connect enabled network.
-start_mc.php
+* start_mc.php
    Construct the Mobile Connect Auth URL and redirect the "User-Agent" to it.
-callback.php
+* callback.php
    Manage the callback of the OIDC requests. 
-more_info.php
+* more_info.php
    Simple example of how to extract data from your serverside using PHPSESSION
 
 ### High Level Flow.
