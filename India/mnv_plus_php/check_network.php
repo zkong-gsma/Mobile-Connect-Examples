@@ -12,14 +12,13 @@ include "mobileConnect.php";
 
 $mc = new mobileConnect($config);
 
-$ip = "";
+$ip = "106.222.81.82";
 if (isset($_GET["ip"])) {
    $ip = $_GET["ip"];
 }
 $response = $mc->PerformIPDiscovery($ip);
 
-
-if (isset($response->serving_operator)) {
+if (isset($response->response->serving_operator)) {
    $_SESSION['disc_response'] = $response;
    echo json_encode(Array("status"=>true, "session_id"=>session_id()), JSON_PRETTY_PRINT);
 } else {

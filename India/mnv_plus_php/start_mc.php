@@ -16,6 +16,6 @@ $mc = new mobileConnect($config);
 $mc->parseDiscoveryResponse($_SESSION['disc_response']);
 $auth_url = $mc->mobileconnectAuthenticate($_GET['msisdn']);
 $_SESSION['mc_obj'] = serialize($mc);
-echo $url;
+echo $auth_url;
 exit;
 ?>
