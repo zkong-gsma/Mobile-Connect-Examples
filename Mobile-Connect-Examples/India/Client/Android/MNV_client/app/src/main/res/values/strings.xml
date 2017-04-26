@@ -1,4 +1,0 @@
-<resources>
-    <string name="app_name">MNV_client</string>
-    <string name="message">If you see this message, I means you are either on Wifi or do not have internet Connection. When this happens, please perform standard SMS_OTP</string>
-</resources>
